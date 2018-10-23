@@ -1,17 +1,18 @@
 const loadPinsForBoard = (boardId) => {
     return new Promise((resolve, reject) => {
         $.get('../db/pins.json')
-            .done((data) => {
-               const pinsForBoards = data.pins.filter(pin => pin.board_id == boardId)
-               resolve(pinsForBoards)
-            })
-            .fail((error) => {
-                console.error(error);
-                reject(error);
-            })
+        .done((data) => {
+            const pinsForBoards = data.pins.filter(pin => pin.board_id == boardId)
+            resolve(pinsForBoards)
+        })
+        .fail((error) => {
+            console.error(error);
+            reject(error);
+        })
     })
 } 
 
+//This is coming from 
 const loadPinsOnBoards = (boards) => {
     return new Promise((resolve, reject) => {
         $.get('../db/pins.json')

@@ -29,13 +29,11 @@ const writeBoards = (boards) => {
     $('#user-boards').html(domString); // prints to DOM
 }
 
+//THIS IS THE FIRST THING TO RUN FROM MAIN.JS
 const initalizeBoardView = () => {
     loadBoards().then((boards) => {
-        // writeBoards(boards);
-        // bindEvents();
         return loadPinsOnBoards(boards);
     }).then((boardsWithPins) => {
-        console.log(boardsWithPins);
         writeBoards(boardsWithPins);
         bindEvents();
     }) .catch((error) =>{
