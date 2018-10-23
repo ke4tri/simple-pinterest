@@ -16,7 +16,7 @@ const writeBoards = (boards) => {
   boards.forEach(board => {
     const boardImg = board.pins[0] ? board.pins[0].image_url : './db/default-img.jpeg';
     domString += `
-      <div id='${board.id}' class="board-card p-2">
+      <div id='${board.id}' class="pcard board-card align-self-start p-2">
         <img class="card-img-top" src="${boardImg}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">${board.name}</h5>
