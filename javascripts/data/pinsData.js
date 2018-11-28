@@ -29,6 +29,7 @@ const loadPinsOnBoards = (boards) => {
         reject('error loadPinsOnBoards', error);
     })
 })
+
 }
 
 export {loadPinsForBoard, loadPinsOnBoards};
