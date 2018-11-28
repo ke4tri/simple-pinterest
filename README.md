@@ -4,7 +4,7 @@ In-class code along lecture for PROMISES.
 ### Description
 Display multiple pins when clicking on master product cards. 
 
-![ScreenShot]()
+![ScreenShot](https://github.com/ke4tri/simple-pinterest/blob/master/javascripts/components/img/pinCover.JPG?raw=true)
 
 ### Technologies Used
 * jquery
