@@ -1,4 +1,3 @@
-
 //Pulls info from the 'API'
 //This is called from the  initalizeBoardView() in boards.js
 const loadBoards = () => {
@@ -14,3 +13,4 @@ const loadBoards = () => {
 }
 
 export {loadBoards}
+

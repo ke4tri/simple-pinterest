@@ -35,6 +35,7 @@ const initialPinView = (boardId) => {
     })
     .catch(error => {
         console.error('things messed up in pins', error);
+
     });
 }
 
