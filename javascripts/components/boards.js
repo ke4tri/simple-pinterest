@@ -31,14 +31,15 @@ const writeBoards = (boards) => {
 
 //THIS IS THE FIRST THING TO RUN FROM MAIN.JS
 const initalizeBoardView = () => {
-    loadBoards().then((boards) => {
+    loadBoards().then((boards) => { //moved boards to next  func loadPinsOnBoards
         return loadPinsOnBoards(boards);
-    }).then((boardsWithPins) => {
-        writeBoards(boardsWithPins);
+    }).then((boardsWithPins) => {// need to make my own boardsWith
+        writeBoards(boardsWithPins);//PULLED FROM LINE 26 IN pinsData
         bindEvents();
     }) .catch((error) =>{
         console.error(error);
     })
 }
+
 
 export {initalizeBoardView}
